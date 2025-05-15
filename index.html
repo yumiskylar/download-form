@@ -2,31 +2,38 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>申請書ダウンロード</title>
+  <title>申請書プレビュー</title>
   <style>
     body {
+      margin: 0;
       font-family: sans-serif;
-      text-align: center;
-      margin-top: 100px;
     }
-    button {
-      padding: 12px 24px;
+    iframe {
+      width: 100%;
+      height: 95vh;
+      border: none;
+    }
+    .download-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
       background-color: #007bff;
       color: white;
+      padding: 10px 16px;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 6px;
       cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
     }
-    button:hover {
+    .download-btn:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>申請書をダウンロード</h1>
-  <a href="JHFC_會員入会申請書.docx" download target="_blank">
-    <button>申請書をダウンロード</button>
-  </a>
+  <iframe src="JHFC_會員入会申請書.pdf"></iframe>
+
+  <a href="JHFC_會員入会申請書.docx" download class="download-btn">ダウンロード</a>
 </body>
 </html>
